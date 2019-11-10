@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="estilos.css" type="text/css">
+  <title>My Aplicación con Sockets</title>
+
+</head>
+<body>
+  <h1>My App</h1>
+  <div id="messages"></div>
+  <hr/>
+  <label class="ejercicios">Cant. de vocales: </label>
+  <pre class="ejercicios" id="vocales"></pre>
+  <label class="ejercicios">Cant. de palabras: </label>
+  <pre class="ejercicios" id="palabras"></pre>
+  <label class="ejercicios">Cant. de numeros: </label>
+  <pre class="ejercicios" id="numeros"></pre>
+  <label class="ejercicios">Palabras que inician con mayúsculas: </label>
+  <pre class="ejercicios" id="mayusculas"></pre>
+  <label class="ejercicios">Palabras que no finalizan con vocal:</label>
+  <pre class="ejercicios" id="noVocales"></pre>
+  
+  <form onsubmit="return addMessage(this)" >
+    <input type="text" id="username" placeholder="Tu Nombre" >
+    <input type="text" id="texto" placeholder="Cuéntanos algo...">
+    <input type="submit"  value="Enviar!">
+  </form>
+  
+</body>
+<script src="/socket.io/socket.io.js"></script>
+<script src="main.js"></script>
+</html>

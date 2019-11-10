@@ -1,0 +1,11 @@
+label.ejercicios {
+margin-right: 2px;
+}
+.ejercicios{
+display: inline;
+
+}
+pre.ejercicios {
+    margin-right: 10px;
+    font-size: 15px;
+}
